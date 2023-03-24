@@ -1,6 +1,9 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-
+var lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","s","t","u","v","w","x","y","z"]
+var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","Q","R","S","T","U","V","W","X","Y","Z"]
+var specialCharacters = ["$", "!", "@", "?"]
+var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", ]
 
 function generatePassword() {
     console.log ("you clicked the button")
@@ -18,37 +21,26 @@ function generatePassword() {
     var upperCase = confirm ("Do you want upper case characters in your password?")
     var numbersChoice = confirm ("Do you want numbers in your password?")
     var specialCharacters = confirm ("Do you want special characters in your password?")
-
-    console.log(passwordLength)
-    console.log(lowerCase)
-    console.log(upperCase)
-    console.log(numbersChoice)
-    console.log(specialCharacters)
-
-    return "Password created goes here";
-
-var lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","s","t","u","v","w","x","y","z"]
-var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","Q","R","S","T","U","V","W","X","Y","Z"]
-var specialCharacters = ["$", "!", "@", "?"]
-var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", ]
-}
-
-if(lowerCase === true) {
-  possibleCharacters = possibleCharacters.concat(lowercase);
-}
-  if(upperCase === true) {
-    possibleCharacters = possibleCharacters.concat(uppercase);
-}
-  if(numbersChoice === true) {
+    if(lowerCase === true) {
+    possibleCharacters = possibleCharacters.concat(lowerCase);
+    }
+   if(upperCase === true) {
+    possibleCharacters = possibleCharacters.concat(upperCase);
+    }
+    if(numbersChoice === true) {
     possibleCharacters = possibleCharacters.concat(numbersChoice);
-}
-  if(specialCharacters === true) {
+    }
+    if(specialCharacters === true) {
     possibleCharacters = possibleCharacters.concat(specialCharacters);
+    }
+
+  return "Password created goes here";
+
 }
+
 for(var i = 0; i <= passwordLength; i ++) {
   var randomNumber = Math.floor(Math.random( * lowerCase.length);
   password += lowerCase.substring(randomNumber, randomNimber +1)
-}
 
 // Write password to the #password input
 function writePassword() {
@@ -72,5 +64,5 @@ document.querySelectorAll()
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", generatePassword);
 
