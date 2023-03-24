@@ -38,9 +38,12 @@ function generatePassword() {
 
 }
 
-for(var i = 0; i <= passwordLength; i ++) {
-  var randomNumber = Math.floor(Math.random( * lowerCase.length);
-  password += lowerCase.substring(randomNumber, randomNimber +1)
+function randomizer(arr) {
+  var randomPick = Math.floor(Math.random()* arr.length);
+  var randomCharacter = arr[randomPick];
+
+  return randomCharacter;
+}
 
 // Write password to the #password input
 function writePassword() {
