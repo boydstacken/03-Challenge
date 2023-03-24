@@ -49,7 +49,7 @@ function randomizer(arr) {
 function writePassword() {
   
 
-
+//test notes
 //Utilizing Prompt for user input
 if (specialCharacters) = (prompt("Password Length must be between 8 - 128 characters"));
 if (passwordConditions < 8 || > 128 || 
