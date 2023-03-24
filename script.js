@@ -3,7 +3,7 @@ var generateBtn = document.querySelector("#generate");
 var lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","s","t","u","v","w","x","y","z"]
 var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","Q","R","S","T","U","V","W","X","Y","Z"]
 var specialCharacters = ["$", "!", "@", "?"]
-var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", ]
+var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8" ]
 
 function generatePassword() {
     console.log ("you clicked the button")
@@ -51,8 +51,8 @@ function writePassword() {
 
 //test notes
 //Utilizing Prompt for user input
-if (specialCharacters) = (prompt("Password Length must be between 8 - 128 characters"));
-if (passwordConditions < 8 || > 128 || 
+//if (specialCharacters) = (prompt("Password Length must be between 8 - 128 characters"));
+//if (passwordConditions < 8 || > 128 || 
 
 
  
