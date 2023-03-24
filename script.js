@@ -14,9 +14,16 @@ function generatePassword() {
       return;
     }
 
-    var lowerCase = prompt("Do you want lowercase letters in your password?")
-    var numbers = prompt("Do you want numbers in your password?")
-    var specialCharacters = prompt("Do you want special characters in your password?")
+    var lowerCase = confirm ("Do you want lowercase letters in your password?")
+    var upperCase = confirm ("Do you want upper case characters in your password?")
+    var numbersChoice = confirm ("Do you want numbers in your password?")
+    var specialCharacters = confirm ("Do you want special characters in your password?")
+
+    console.log(passwordLength)
+    console.log(lowerCase)
+    console.log(upperCase)
+    console.log(numbersChoice)
+    console.log(specialCharacters)
 
     return "Password created goes here";
 
@@ -24,6 +31,23 @@ var lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p"
 var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","Q","R","S","T","U","V","W","X","Y","Z"]
 var specialCharacters = ["$", "!", "@", "?"]
 var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", ]
+}
+
+if(lowerCase === true) {
+  possibleCharacters = possibleCharacters.concat(lowercase);
+}
+  if(upperCase === true) {
+    possibleCharacters = possibleCharacters.concat(uppercase);
+}
+  if(numbersChoice === true) {
+    possibleCharacters = possibleCharacters.concat(numbersChoice);
+}
+  if(specialCharacters === true) {
+    possibleCharacters = possibleCharacters.concat(specialCharacters);
+}
+for(var i = 0; i <= passwordLength; i ++) {
+  var randomNumber = Math.floor(Math.random( * lowerCase.length);
+  password += lowerCase.substring(randomNumber, randomNimber +1)
 }
 
 // Write password to the #password input
