@@ -40,8 +40,12 @@ console.log(passwordLength)
 
   for (var i = 0; i < passwordLength; i++) {
     let randomValue = Math.floor(Math.random() * possibleCharacters.length);
-    console.log(possibleCharacters[randomValue])
+    console.log(possibleCharacters[randomValue];
   }
+  //const = [upperCase,numbers,specialCharacters]
+  //console.log(elements.join(''));
+
+
     //for (var i = 0; i < randomPassword; i++) {
     //let randomPassword = passwordLength + possibleCharacters([randomValue].passwordLength);
     //randomPassword = randomPasswrd +  arr[randomValue]
