@@ -37,13 +37,15 @@ function generatePassword() {
     possibleCharacters.push(specialCharacters);
   }
 
-  let randomPassword = ""
+  let randomPassword = []
+  let finalPassword = ""
   let newpossibleCharacters = possibleCharacters.join('')
   console.log(newpossibleCharacters)
   for (var i = 0; i < passwordLength; i++) {
     let randomValue = Math.floor(Math.random() * newpossibleCharacters.length);
     console.log(newpossibleCharacters[randomValue]);
-    randomPassword + newpossibleCharacters.charAt(randomValue);
+    randomPassword.push(newpossibleCharacters.charAt(randomValue));
+  finalPassword = randomPassword.join('')
   }
   //const = [upperCase,numbers,specialCharacters]
   //console.log(elements.push);
@@ -53,11 +55,7 @@ function generatePassword() {
   //let randomPassword = passwordLength + possibleCharacters([randomValue].passwordLength);
   //randomPassword = randomPasswrd +  arr[randomValue]
 
-  return randomPassword;
-}
-function showAlert() {
-  var myText = (randomPassword);
-  alert (myText);
+  return finalPassword;
 }
 
 // Write password to the #password input
