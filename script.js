@@ -42,21 +42,27 @@ function randomizer(arr) {
   var randomPick = Math.floor(Math.random()* arr.length);
   var randomCharacter = arr[randomPick];
 
+  return password;
+ }
+
+
+for (let i = 0, i < result; i++) {
+  let randomValue = Math.floor(Math.random()) * userInput.length);
+  randomPassword = randomPasswrd +  userInput[randomValue]
+    
+  return randomPassword;
+  }
+
   return randomCharacter;
-}
+} 
 
 // Write password to the #password input
 function writePassword() {
   
 
-//test notes
-//Utilizing Prompt for user input
-//if (specialCharacters) = (prompt("Password Length must be between 8 - 128 characters"));
-//if (passwordConditions < 8 || > 128 || 
-
 
  
-  var passwordText = document.querySelector("#password");
+var passwordText = document.querySelector("#password");
 
 document.querySelectorAll()
 
