@@ -42,10 +42,9 @@ console.log(passwordLength)
     let randomValue = Math.floor(Math.random() * possibleCharacters.length);
     console.log(possibleCharacters[randomValue])
     //randomPassword = randomPasswrd +  arr[randomValue]
-  }
-    // return randomPassword;
-
-  //return randomCharacter;
+  }  
+  
+  return possibleCharacters.passwordLength;
 }
 
 // Write password to the #password input
