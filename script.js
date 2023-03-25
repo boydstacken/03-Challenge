@@ -53,8 +53,11 @@ function generatePassword() {
   //let randomPassword = passwordLength + possibleCharacters([randomValue].passwordLength);
   //randomPassword = randomPasswrd +  arr[randomValue]
 
-
   return randomPassword;
+}
+function showAlert() {
+  var myText = (randomPassword);
+  alert (myText);
 }
 
 // Write password to the #password input
