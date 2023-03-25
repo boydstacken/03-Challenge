@@ -44,7 +44,7 @@ console.log(passwordLength)
     //randomPassword = randomPasswrd +  arr[randomValue]
   }  
   
-  return possibleCharacters.passwordLength;
+  return possibleCharacters;
 }
 
 // Write password to the #password input
