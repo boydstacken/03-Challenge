@@ -1,4 +1,5 @@
 // Assignment Code
+//Used strings to get random password to generate with the different variables
 var generateBtn = document.querySelector("#generate");
 var lowerCase = "abcdefghijklmnopqrstuvwxyz"
 var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -17,6 +18,7 @@ function generatePassword() {
     alert("Your password must be less than 128 characters")
     return;
   }
+  //Added cofirms to get user through password setup process
   console.log(passwordLength)
   var lowerCaseConfirm = confirm("Do you want lowercase letters in your password?")
   var upperCaseConfirm = confirm("Do you want upper case characters in your password?")
@@ -47,14 +49,7 @@ function generatePassword() {
     randomPassword.push(newpossibleCharacters.charAt(randomValue));
   finalPassword = randomPassword.join('')
   }
-  //const = [upperCase,numbers,specialCharacters]
-  //console.log(elements.push);
-
-
-  //for (var i = 0; i < randomPassword; i++) {
-  //let randomPassword = passwordLength + possibleCharacters([randomValue].passwordLength);
-  //randomPassword = randomPasswrd +  arr[randomValue]
-
+ 
   return finalPassword;
 }
 
